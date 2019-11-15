@@ -3,6 +3,13 @@ created by
 ShiSHcat#8214 (Discord)
 @ShiSHcat8214 (Telegram)
 
+## This client could lead to termination of your account due to violation of the Discord terms of service. Use it at your own risk. In any case I have never seen anyone be banned from discord for the use of custom clients or Betterdiscord.
+
+# This client still in beta.
+ We will support soon:
+ - Attachments
+ - DMS
+We will maybe support calls in another project.
 Submit bugs or get support here: (italian or english only)
  - [discord server](https://discord.gg/sgwm7Ax)
  - [telegram group](https://t.me/discordgram)
