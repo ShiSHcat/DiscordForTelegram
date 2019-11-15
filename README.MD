@@ -10,6 +10,7 @@ Submit bugs or get support here: (italian or english only)
 
 ### How to use
 Download and extract the repository
+
 Run `npm install discord.js`
 
 Run `npm install telegraf`
