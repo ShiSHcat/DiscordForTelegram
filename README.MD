@@ -5,7 +5,7 @@ ShiSHcat#8214 (Discord)
 
 ## This client could lead to termination of your account due to violation of the Discord terms of service. Use it at your own risk. In any case I have never seen anyone be banned from discord for the use of custom clients or Betterdiscord.
 
-# This client still in beta.
+# 🍝🍝This client still in beta.🍝🍝
  We will support soon:
  - Attachments
  - DMS
