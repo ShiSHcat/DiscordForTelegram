@@ -44,7 +44,7 @@ Go to your node_modules directory and go in discord.js/src/client/rest/APIReques
 
 ## Run it with node index.js .
 
-##Commands guide
+## Commands guide
 
 Write @the_bot_name into the bot chat. Inline buttons will help you.
 
