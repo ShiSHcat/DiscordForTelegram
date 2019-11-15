@@ -18,6 +18,10 @@ Submit bugs or get support here: (italian or english only)
  - [github issues](https://github.com/discordgram/DiscordForTelegram/issues)
 
 ### How to use
+Create a bot and get the token with [@BotFather](https://t.me/BotFather)
+Set the bot inline sending /setinline to botfather
+(/)start the bot
+
 Download and extract the repository
 
 Run `npm install discord.js`
@@ -35,7 +39,14 @@ Go to your node_modules directory and go in discord.js/src/client/rest/APIReques
 #### edit your config.js file
 - Owner chat id: Your telegram chat id. You can find it writing in a chat @TuriBot and click on DC and ID.
 - Your telegram tag. If you havent one write @username.
-- Your telegram bot token. To get it chat with [@BotFather](https://t.me/BotFather) . Keep it private.
+- Your telegram bot token. Keep it private.
 - Discord user token. To get it login with the official client or chrome and follow [this](https://discordhelp.net/discord-token) guide. Keep it private.
 
 ## Run it with node index.js .
+
+##Commands guide
+
+Write @the_bot_name into the bot chat. Inline buttons will help you.
+
+To remove binded channels, do /stop.
+To send a play presence to discord, send /play <game>.
