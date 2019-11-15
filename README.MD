@@ -9,7 +9,9 @@ ShiSHcat#8214 (Discord)
  We will support soon:
  - Attachments
  - DMS
+ 
 We will maybe support calls in another project.
+
 Submit bugs or get support here: (italian or english only)
  - [discord server](https://discord.gg/sgwm7Ax)
  - [telegram group](https://t.me/discordgram)
