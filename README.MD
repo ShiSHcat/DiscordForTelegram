@@ -11,6 +11,7 @@ Submit bugs or get support here: (italian or english only)
 ### How to use
 Download and extract the repository
 Run `npm install discord.js`
+
 Run `npm install telegraf`
 ### edit files
 Go to your node_modules directory and go in discord.js/src/client/rest/APIRequest.js and add these lines to the gen() function after request definition. 
