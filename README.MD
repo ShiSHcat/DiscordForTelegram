@@ -37,6 +37,7 @@ Go to your node_modules directory and go in discord.js/src/client/rest/APIReques
 `request.set("x-super-properties","eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRGlzY29yZCBDbGllbnQiLCJyZWxlYXNlX2NoYW5uZWwiOiJjYW5hcnkiLCJjbGllbnRfdmVyc2lvbiI6IjAuMC4yNTgiLCJvc192ZXJzaW9uIjoiMTAuMC4xODM2MiIsIm9zX2FyY2giOiJ4NjQiLCJjbGllbnRfYnVpbGRfbnVtYmVyIjo0OTE3NCwiY2xpZW50X2V2ZW50X3NvdXJjZSI6bnVsbH0=")`
 
 #### edit your config.js file
+Rename your config.example.js to config.js
 - Owner chat id: Your telegram chat id. You can find it writing in a chat @TuriBot and click on DC and ID.
 - Your telegram tag. If you havent one write @username.
 - Your telegram bot token. Keep it private.
@@ -49,4 +50,4 @@ Go to your node_modules directory and go in discord.js/src/client/rest/APIReques
 Write @the_bot_name into the bot chat. Inline buttons will help you.
 
 To remove binded channels, do /stop.
-To send a play presence to discord, send /play <game>.
+To send a playing presence to discord, send /play <game>.
