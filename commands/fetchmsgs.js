@@ -33,7 +33,7 @@ module.exports = async (ctx,user,client,Telegraf,message_) => {
             
            ctx.reply("Invalid channel")
     }else {
-        if((!chn.type == "text")||(!chn.memberPermissions(e.guild.me).has("READ_MESSAGES"))) {return ctx.reply("Channel error")}
+        if((!chn.type == "text")||(!chn.memberPermissions(chn.guild.me).has("READ_MESSAGES"))) {return ctx.reply("Channel error")}
         if (typeof params[3]!== "undefined"||params[3] !== "") {
             var before = chn.messages.get(params[3]);
         }
@@ -46,13 +46,13 @@ module.exports = async (ctx,user,client,Telegraf,message_) => {
         msgs.reverse();
         for (const key in msgs) {
                 const msg_ = msgs[key];
-                if(chn.memberPermissions(e.guild.me).has("SEND_MESSAGES"))  {
+                if(chn.memberPermissions(msg_.guild.me).has("SEND_MESSAGES"))  {
                 const msge = Telegraf.Extra
                     .markup((m) => m.inlineKeyboard([
                         
-                            m.switchToCurrentChatButton(`Get channel`, `server${message.guild.id} ${message.channel.name}`),
-                            m.switchToCurrentChatButton(`Send message`, `sm${message.channel.id}`),
-                            m.switchToCurrentChatButton(`Reply`, `sm${message.channel.id} <@${message.author.id}>`),
+                            m.switchToCurrentChatButton(`Get channel`, `server${msg_.guild.id} ${msg_.channel.name}`),
+                            m.switchToCurrentChatButton(`Send message`, `sm${msg_.channel.id}`),
+                            m.switchToCurrentChatButton(`Reply`, `sm${msg_.channel.id} <@${msg_.author.id}>`),
                           
                     ]
                         ))
@@ -60,8 +60,8 @@ module.exports = async (ctx,user,client,Telegraf,message_) => {
                     const msge = Telegraf.Extra
                     .markup((m) => m.inlineKeyboard([
                         
-                            m.switchToCurrentChatButton(`Get channel`, `server${message.guild.id} ${message.channel.name}`),
-                            m.switchToCurrentChatButton(`Fetch again`, `getlast${message.channel.id} `),
+                            m.switchToCurrentChatButton(`Get channel`, `server${msg_.guild.id} ${msg_.channel.name}`),
+                            m.switchToCurrentChatButton(`Fetch again`, `getlast${msg_.channel.id} `),
                           
                     ]
                         ))
