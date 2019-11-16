@@ -47,7 +47,7 @@ module.exports = async (ctx,user,client,Telegraf,message_) => {
         for (const key in msgs) {
                 const msg_ = msgs[key];
                 if(chn.memberPermissions(msg_.guild.me).has("SEND_MESSAGES"))  {
-                const msge = Telegraf.Extra
+                var msge = Telegraf.Extra
                     .markup((m) => m.inlineKeyboard([
                         
                             m.switchToCurrentChatButton(`Get channel`, `server${msg_.guild.id} ${msg_.channel.name}`),
@@ -56,8 +56,8 @@ module.exports = async (ctx,user,client,Telegraf,message_) => {
                           
                     ]
                         ))
-                } else {
-                    const msge = Telegraf.Extra
+            } else {
+                var msge = Telegraf.Extra
                     .markup((m) => m.inlineKeyboard([
                         
                             m.switchToCurrentChatButton(`Get channel`, `server${msg_.guild.id} ${msg_.channel.name}`),
