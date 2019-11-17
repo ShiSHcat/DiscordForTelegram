@@ -44,7 +44,7 @@ bot.command("bind",(ctx)=>
     if(e) {
     var _sync_ =  async message=> {
       if( message.channel.id == e.id) {
-        bot.telegram.sendMessage(config.owner_chat_id,await (message_(message)),Telegraf.Extra.markup((m) => m.inlineKeyboard([
+        bot.telegram.sendMessage(config.owner_chat_id,"Message from "+message.guild.name+" : "+await (message_(message)),Telegraf.Extra.markup((m) => m.inlineKeyboard([
           m.switchToCurrentChatButton(`Get channel`, `server${message.guild.id} ${message.channel.name}`),
           m.switchToCurrentChatButton(`Send message`, `silent_sm${message.channel.id}`),
           m.switchToCurrentChatButton(`Reply`, `silent_sm${message.channel.id} <@${message.author.id}>`),
@@ -70,7 +70,7 @@ client.on('ready', async () => {
 var com = async message=> {
   if (message.guild) {
   if (message.mentions.users.get(client.user.id)||message.mentions.everyone) {
-    if(message.guild.muted||message.channel.muted) {
+    if(!message.guild.muted||!message.channel.muted) {
       let a = await message_(message);
       bot.telegram.sendMessage(config.owner_chat_id,"⚠️⚠️New mentions\n\n New message: "+a,Telegraf.Extra
       .markup((m) => m.inlineKeyboard([
