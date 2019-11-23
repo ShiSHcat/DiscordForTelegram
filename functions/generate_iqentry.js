@@ -45,23 +45,25 @@ module.exports.channel = (chan,Markup) => {
           var t2 = "";
          }
          var markups = [];
+         markups.push([
+          Markup.switchToCurrentChatButton('Back to guild', `server${chan.guild.id} `)
+                 ]        );
          if (show_inline_sm) {
-          markups.push(
-            Markup.switchToCurrentChatButton('Send a message', `sm${chan.id} `)
-          );
+          markups.push([Markup.switchToCurrentChatButton('Send a message', `sm${chan.id} `)]);
          } 
          if (show_inline_fetch) {
-          markups.push(
+          markups.push([
               Markup.switchToCurrentChatButton('Fetch 10 messages', `getlast${chan.id} 10`),
               Markup.switchToCurrentChatButton('Bind this channel', `sync${chan.id}`)
-          )
+          ]);
+        }
             
           
-         }
-         if (Array.isArray(markups) && markups.length !== 0) {
-           rt.reply_markup = Markup.inlineKeyboard(markups)
+         
+        rt.reply_markup = {inline_keyboard:markups} 
+           
           
-         }
+         
          
          if (t2!== "") {
            rt.description = t2;
@@ -70,6 +72,10 @@ module.exports.channel = (chan,Markup) => {
          
          return rt;
 }
+
+
+
+
 module.exports.guild = (guild,Markup) => {
   let result;
   let characters       = '0123456789';
@@ -95,3 +101,4 @@ module.exports.guild = (guild,Markup) => {
  } 
  return e;
 }
+

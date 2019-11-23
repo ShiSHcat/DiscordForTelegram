@@ -42,8 +42,8 @@ module.exports= async ({ inlineQuery, answerInlineQuery },client,channel,channel
           id: `0`,
           title: `You arent allowed to use this bot.`,
           input_message_content: {
-            message_text: `contact the owner : @shishcat8214`
-          },
+            message_text: `contact the owner : @shishcat8214`    
+          }
         }
       ]
     }

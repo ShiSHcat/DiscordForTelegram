@@ -27,10 +27,11 @@ const fetch = require("./commands/fetchmsgs");
 const play = require("./commands/play.js")
 const sync = require("./commands/sync.js")
 const stop = require("./commands/stop.js")
+
 const bot = new Telegraf(config.bt)
 const client = new Discord.Client();
 
-//COMMANDS
+
 bot.command('sm', (ctx) => ssm(ctx,config.owner_chat_id,client));
 bot.command('s_ssm', (ctx) => sssm(ctx,config.owner_chat_id,client));
 bot.command("start",(ctx)=>startbot(ctx,config.owner_chat_id))
@@ -70,7 +71,7 @@ client.on('ready', async () => {
 var com = async message=> {
   if (message.guild) {
   if (message.mentions.users.get(client.user.id)||message.mentions.everyone) {
-    if(!message.guild.muted||!message.channel.muted) {
+    if(!message.guild.muted&&!message.channel.muted&&!client.blocked.get(message.author.id)) {
       let a = await message_(message);
       bot.telegram.sendMessage(config.owner_chat_id,"⚠️⚠️New mentions\n\n New message: "+a,Telegraf.Extra
       .markup((m) => m.inlineKeyboard([
