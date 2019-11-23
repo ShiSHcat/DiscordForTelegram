@@ -71,7 +71,7 @@ client.on('ready', async () => {
 var com = async message=> {
   if (message.guild) {
   if (message.mentions.users.get(client.user.id)||message.mentions.everyone) {
-    if(!message.guild.muted&&!message.channel.muted&&!client.blocked.get(message.author.id)) {
+    if(!message.guild.muted&&!message.channel.muted&&!client.user.blocked.get(message.author.id)) {
       let a = await message_(message);
       bot.telegram.sendMessage(config.owner_chat_id,"⚠️⚠️New mentions\n\n New message: "+a,Telegraf.Extra
       .markup((m) => m.inlineKeyboard([
