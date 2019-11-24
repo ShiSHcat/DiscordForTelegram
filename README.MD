@@ -5,14 +5,14 @@
 <p align="center">
 <a href="https://spdx.org/licenses/MIT.html"><img alt="license" src="https://img.shields.io/github/license/discordgram/DiscordForTelegram"/></a>
 <a href="https://shishcat.ga"><img alt="author" src="https://img.shields.io/badge/author-ShiSHcat8214-red"/></a>
-<a href="https://telegraf.js.org"><img alt="author" src="https://img.shields.io/badge/framework--telegram-Telegraf-yellow"/></a>
-<a href="https://discord.js.org"><img alt="author" src="https://img.shields.io/badge/framework--discord-discord.js-yellow"/></a>
+<a href="https://telegraf.js.org"><img alt="framework" src="https://img.shields.io/badge/framework--telegram-Telegraf-yellow"/></a>
+<a href="https://discord.js.org"><img alt="framework" src="https://img.shields.io/badge/framework--discord-discord.js-yellow"/></a>
 <br>
 <br>
 <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/discordgram/DiscordForTelegram?style=social">
 <img alt="GitHub stars" src="https://img.shields.io/github/stars/discordgram/DiscordForTelegram?style=social">
 <img alt="GitHub forks" src="https://img.shields.io/github/forks/discordgram/DiscordForTelegram?style=social">
-<a href="https://www.patreon.com/bePatron?u=12422536" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+<a href="https://www.patreon.com/shishcat"><img alt="donate" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"/></a>
 <h1>⚠️⚠️<b>WARNING</b>⚠️⚠️</h1>
 <h2>This client could lead to termination of your account due to violation of the Discord terms of service. Use it at your own risk. In any case I have never seen anyone be banned from discord for the use of custom clients or Betterdiscord.
 Also, this client still in beta.🍝🍝</h2>
