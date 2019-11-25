@@ -1,9 +1,8 @@
 <h1 align="center">
 <a href="https://github.com/discordgram/DiscordForTelegram">DiscordForTelegram</a>
 </h1>
-
+<a align="center" href="https://www.patreon.com/shishcat"><img alt="donate" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"/></a>
 <p align="center">
-  <a href="https://www.patreon.com/shishcat"><img alt="donate" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"/></a>
 <a href="https://spdx.org/licenses/MIT.html"><img alt="license" src="https://img.shields.io/github/license/discordgram/DiscordForTelegram"/></a>
 <a href="https://shishcat.ga"><img alt="author" src="https://img.shields.io/badge/author-ShiSHcat8214-red"/></a>
 <a href="https://telegraf.js.org"><img alt="framework" src="https://img.shields.io/badge/framework--telegram-Telegraf-yellow"/></a>
