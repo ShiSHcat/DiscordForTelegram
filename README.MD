@@ -47,6 +47,7 @@ Set the bot inline sending /setinline to botfather
 
 Download and extract the repository
 
+install manually with git discord.js or
 Run `npm install discord.js`
 
 Run `npm install telegraf`
